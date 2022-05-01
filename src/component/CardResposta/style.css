@@ -1,0 +1,55 @@
+
+/* TOPICO VER RESPOSTA */
+.topico-resposta{
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -5px;
+    border-right: 0;
+    border-left: 0;
+ 
+}
+.wrapper-resposta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.topico-resposta .author-resposta p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 6px;
+}
+
+.topico-resposta .conteudo-resposta p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4D4D4D;
+    padding: 10px 0;
+}
+.author-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.author-icon p{
+    font-size: 12px;
+    font-weight: 700;
+    color: #ed7839;
+}
+.author-icon img{
+    width: 18px;
+    height: 18px;
+}
+

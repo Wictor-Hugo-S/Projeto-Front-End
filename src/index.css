@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: 'Roboto','Quicksand' sans-serif ;
+  src:url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap')
+}
+
+
+
+*{
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+estilos úteis usados em todas páginas
+ */
+
+.block{
+  display: block;
+}
+.none{
+  display: none ;
+}
+.active{
+  background-color: #fdf1eb !important;
+}

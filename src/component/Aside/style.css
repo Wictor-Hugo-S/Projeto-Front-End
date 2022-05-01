@@ -1,0 +1,86 @@
+
+aside { 
+       grid-area: aside;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+
+ }
+ 
+
+ aside .texto-aside h2{    
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 30px;
+    line-height: 72px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+
+ }
+ aside .logo-aside img{
+    height: 258px;
+    width: 220px;
+   
+ }
+ aside .wrapper-menu{
+
+    width: 100%;
+    height: 35px;
+    border-bottom: solid 1px #e7e7e7;
+   padding-left: 15px;
+   display: flex;
+   align-items: center;
+   transition: all ease-in-out .3s;
+  
+  
+ }
+
+ aside .menu .wrapper-menu a{
+
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #725c5c;
+   
+   
+ }
+ 
+
+ .retangle{
+    position: relative;
+    right: 15px;
+    height: 100%;
+ }
+
+ 
+ .wrapper-menu:hover{
+   background-color: #fdf1eb ;
+   cursor: pointer;
+   background-image: url('../../assets/rectangle.png');
+   background-repeat: no-repeat;
+    background-position: -1.1%;
+   background-size: contain;
+  
+   
+   
+ }
+ 
+ @media (max-width: 780px){
+
+ aside{
+    display: none!important;
+ 
+ }
+ .menu-mobile aside{
+    display: block!important;
+   
+ }
+
+ }

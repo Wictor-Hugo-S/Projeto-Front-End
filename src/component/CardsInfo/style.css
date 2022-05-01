@@ -1,0 +1,314 @@
+.content-resumo,.content-discussoes{
+    background: #FDF1EB;
+    margin-top: 70px;
+    width: 98%;
+    max-width: 1200px;
+    background-color: #fdf1eb;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4e4e4e;
+    margin-bottom: 2.5rem;
+    border: solid 1px #ececec;
+}
+/* SECTION CARD RESUMO */
+
+.title-resumo h2{
+    border-bottom:solid  1px #ececec ;
+    border-radius: 3px;
+    padding: .5rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+ 
+}
+.content-resumo .title-resumo p{
+   background-color: #fff;
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 23px;
+letter-spacing: 0.02em;
+color: #5C5C5C;
+padding:10px 10px;
+background:#FFF;
+}
+
+.close-texto{
+   color: #ed7839;
+   font-weight: 700;
+  border: 0;
+    transition: all  ease-in-out 0.3s;
+}
+.close-texto:hover{
+    cursor: pointer;
+}
+
+i{
+    color: #5C5C5C!important;
+}
+
+/* FIM SECTION CARD RESUMO */
+
+/* AUTORES SUEGESTOES CARD DISCUSSOES */
+
+.autores-sugestoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFF;
+   padding-top: 22px;
+    gap:20px;
+   
+    
+
+}
+
+.autores-sugestoes p{
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    color: #ed7839;
+    text-align: center;
+    
+    
+
+}
+.texto-sugestoes p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+    padding:10px 10px;
+    background:#FFF;
+}
+.icons-dicas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:55px;
+    align-items: center;
+}
+.button-topico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: -10px;
+}
+.button-topico button{
+background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+color: white;
+border: 0;
+padding: 8px 8px ;
+transition: all ease-in-out .3s;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
+margin-bottom: -28px;
+z-index: 0;
+}
+
+.button-topico button:hover,
+.button-topico-enviado button:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0,0,0.3);
+    cursor: pointer;
+    transform:  scale(1.1);
+}
+
+/* CRIAR NOVO TOPICO */
+
+.criar-topico, .topico-enviado{
+    padding: 25px 0;
+    background-color: #fff;
+}
+.criar-topico{
+    display: flex;
+    padding:10px 15px;
+    flex-direction: column;
+}
+.criar-topico label{
+   
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ed7839;
+    
+  
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+   
+    
+}
+form input{
+    padding: 15px 10px;
+    margin-top: 10px ;
+    width: 100%;
+    border: solid 1px #cccccc;
+    font-family: "Quicksand", sans-serif;
+    padding: 0.6rem;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+form textarea{
+    padding: 6px 10px;
+    margin-top: 10px ;
+    width: 100%;
+    height: 113px;
+    border: solid 1px #cccccc;
+    font-family: "Quicksand", sans-serif;
+    resize: none;
+    font-size: 16px;
+
+}
+.estilo-texto{
+background: #EAF1F2;
+border: 1px solid #CCCCCC;
+box-sizing: border-box;
+border-radius: 0px 0px 4px 4px;
+height: 40px;
+display: flex;
+justify-content: space-between;
+
+
+
+}
+.italic-bold{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+   
+     
+}
+.font-style{
+    font-style: italic !important;
+    font-weight: normal !important;
+}
+.font-weight-bold{
+    font-weight: bold !important;
+    
+}
+
+.italic-bold img:hover{
+    cursor: pointer;
+    background:#CCCCCC;
+    box-shadow: 0 0px 10px rgba(0, 0,0,0.9);
+    border: 1px solid #CCCCCC;
+    border-width: 10px;
+    transition: all ease-in-out .2s;
+    
+   
+}
+/* FIM DO CRIAR TOPICO */
+
+/* ENVIAR TOPICO */
+.enviar-topico{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #feb154 0%, #f1833e 100%);
+    padding: 2px 50px;
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 0px 0px 4px 0px;
+}
+.enviar-topico:hover,.button-topico-enviado button:hover{
+    background: linear-gradient(180deg, #feb154 15%, #f1833e 100%);
+    box-shadow: 0 0 13px rgba(0, 0,0,0.8);
+    cursor: pointer;
+    
+   
+}
+.topico-enviado{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFF;
+   padding-top: 15px;
+    gap: 8px;
+    
+}
+.title-topico-enviado h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ed7839;
+    
+}
+.descricao-topico-enviado p{
+   
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+   padding: 20px 0;
+  
+
+}
+
+.separar-content{
+    width: 98%;
+    border-bottom: 1px solid #ececec;;
+    outline: 0;
+  
+}
+
+
+.button-topico-enviado button{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 1.0rem;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #feb154 0%, #f1833e 100%);
+    padding: 5px 15px;
+    transition: all ease-in-out .4s;
+    border-radius: 0px 0px 4px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: -20px;
+ 
+   
+}
+.button-topico-enviado {
+    z-index: 5;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 550px){
+    .autores-sugestoes p{
+        font-size: 16px;
+    }
+
+    .texto-sugestoes p{
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+
+
+    
+   

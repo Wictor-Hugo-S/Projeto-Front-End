@@ -1,0 +1,57 @@
+
+.modal{
+ opacity: 0.6;
+    
+}
+
+
+
+.close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F65835 ;
+    border: 0;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+  
+    padding: 4px 4px;
+    border-radius: 4px;
+    
+    z-index: 99;
+    transition: all ease-in-out .3s;
+    
+}
+.close:hover{
+transform: scale(1.1);
+cursor: pointer;
+
+
+}
+
+
+
+
+
+/* 
+.modal-container{
+    position: fixed;
+    max-width: 520px;
+    max-height: 120px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    padding: 5em 2rem;
+    box-shadow: 5px 30px 40px rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(to right,#164284,#164284,#40629e );
+     /* 
+     background-image: url('../../assets/chuva.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat; 
+
+    background-image: linear-gradient(to bottom, transparent 5%,#222a33 90%), url('../../assets/chuvanoite.jpg'); */
+        

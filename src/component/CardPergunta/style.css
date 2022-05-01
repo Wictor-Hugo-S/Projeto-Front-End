@@ -1,0 +1,222 @@
+/* TOPICO DPS QUE FOI ENVIADO */
+
+.container-feedback{
+     padding: 0 60px;
+    
+}
+
+
+.feedback-autores{
+      width: 100%;
+    margin-bottom: -30px;
+    position: relative;
+    margin-top: 30px;
+    box-shadow: 0px 0px 20px rgb(0,0,0,0.4);
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  
+   
+}
+
+
+.wrapper-feedback{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    border-radius: 6px;
+    text-align: center;
+   
+}
+.mod-feedback{
+    padding-top: 10px;
+   
+}
+
+.title-feedback{
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #707070;
+}
+
+.mod-feedback .editar-feedback .link-edit{
+    color: #ed7839;
+    font-size: 13px; 
+    font-weight: normal;
+}
+/* FIM DO TOPICO DPS Q ENVIOU */
+
+/* TOPICO VER PERGUNTAS */
+
+.box-feedback{
+    padding: 13px;
+}
+
+.topico-principal{
+    padding: 10px;
+}
+.topico-assunto{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ed7839;
+    font-family: "Quicksand", sans-serif;
+
+}
+.topico-name-autor{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 6px;
+}
+.topico-conteudo{
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #4D4D4D;
+padding-left: 10px;
+}
+
+
+.topico-adicionais{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 26px;
+    padding-bottom: 20px;
+    
+}
+.topico-adicionais .mais-info img {
+    cursor: pointer;
+    transition: all ease-in-out 4s;
+    
+    animation-duration: 1s;
+    animation-name: barrinha-horizontal ;
+  
+}
+/* ANIMACAO DO MAIS INFO PARA A BARRINHA FICAR VERTICAL E LATERAL */
+@keyframes barrinha-horizontal {
+	0% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+.animation-lixeira{
+    animation-name: barrinha-vertical ;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+    cursor: pointer;
+
+}
+@keyframes barrinha-vertical {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+}
+
+/* FIM DAS ANIMAÇÕES */
+
+.excluir:hover{
+    cursor: pointer;
+   color: red;
+}
+
+
+.topico-adicionais .favoritar{
+    margin-top: 8px;  
+}
+.topico-adicionais .favoritar:hover{
+    cursor: pointer;
+}
+
+.topico-adicionais a,
+.topico-adicionais .resposta button{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+font-size: 14px;
+text-decoration: none;
+
+color: #757575;
+transition: all ease-in-out .3s;
+border: none;
+background: none;
+}
+
+
+
+
+.topico-adicionais a:hover,
+.topico-adicionais .resposta button:hover{
+    color: #ed7839;
+    cursor: pointer;
+}
+
+.box-container{
+    background-color: #FFF;
+    padding-top: 15px;
+    gap: 10px;
+    padding-bottom: 5px;
+    min-width: 100%;
+  
+  
+
+}
+/* FIM TOPICO VER PERGUNTAS */
+
+/* TOPICO ONDE PASSO O MOUSE MOSTRA UMA MESSAGE */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+   
+  width: 75px;
+   height: auto;
+background-color: #e0e0e0;
+    border-radius: 6px;
+    padding: 5px ;
+    color: black;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 30px;
+    
+   
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    color:#121212  !important;
+    font-size: 0.5em;
+   font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+   
+   
+  }
