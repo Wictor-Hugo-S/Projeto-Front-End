@@ -146,19 +146,19 @@ setResposta(nameSortido)
                                 <div className='topico-adicionais'>
                                         {verLixeira&&(
                                             <div className='excluir'>
-                                                <p className='tooltip'>< ImBin  onClick={()=>handleExcluir(pergunta.id)}/>
-                                                    <p style={{left:'18px'}} className='tooltiptext'>Excluir</p>
+                                                <p className=''>< ImBin  onClick={()=>handleExcluir(pergunta.id)}/>
+                                                  
                                                 </p> 
                                             </div>
                                         )}
                                         <div className={`${verLixeira?'animation-lixeira':'mais-info'}`}>
-                                            <p className='tooltip'><img onClick={handleLixeira} src={info}></img>
-                                                <p style={{left:'5px'}} className='tooltiptext'>Mais info</p>
+                                            <p className=''><img onClick={handleLixeira} src={info}></img>
+                                               
                                             </p> 
                                         </div>
                                         <div className='favoritar '>
                                             <p className='tooltip'> <img onClick={handleContador} src={favoritar}></img>
-                                                <p className='tooltiptext'>Clique aqui para dá Like</p>
+                                                <p className='tooltiptext'>Clique aqui para dá like</p>
                                             </p>
                                         </div>
                                         <div className='likes'>

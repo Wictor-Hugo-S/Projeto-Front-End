@@ -24,7 +24,7 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    padding-top: 6px;
+    
 }
 
 .topico-resposta .conteudo-resposta p{
@@ -53,3 +53,25 @@
     height: 18px;
 }
 
+@media (max-width: 378px){
+
+    
+.topico-resposta .author-resposta p{
+   
+    font-size: 10px;
+    line-height: 12px;
+    padding-top: 2px;
+}
+
+.topico-resposta .conteudo-resposta p{
+   
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 0;
+}
+
+.author-icon img{
+    width: 14px;
+    height: 14px;
+}
+}

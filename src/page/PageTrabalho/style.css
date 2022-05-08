@@ -2,8 +2,7 @@
 main {
     display: grid; 
     grid-template-columns: 1fr 5fr ; 
-  
-    gap: 50px 0px; 
+    gap: 10px 0px; 
     grid-template-areas: 
       "aside header"
       "aside content"
@@ -16,18 +15,18 @@ main {
 
 /* CONTAINER CLASSE UTIL */
   .container{
-    max-width: 1200px;
     width: 100%;
-    padding: 0.3rem 1.5rem;
+    padding: 0.6rem 1.5rem;
     padding-left: 33px;
-    
+     
 
 }
   /* AQUI COMEÇA O HEADER */
 
   header { 
       grid-area: header;
-      background: #FDF1EB; 
+      background: #FDF1EB;
+     
      
         
 }
@@ -36,8 +35,7 @@ header .box-cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
-  
+
  }
  .menu-mobile{
      display: none;
@@ -45,7 +43,7 @@ header .box-cabecalho{
      cursor: pointer;
     
  }
- 
+
 
 header .texto-header p{
     font-family: 'Roboto';
@@ -54,32 +52,37 @@ header .texto-header p{
     font-size: 12px;
     line-height: 16px;
     color: #725C5C;
+    white-space:normal;
     
 }
-header .texto-header h2{
-    
+header .text-header-2 p{
+        
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-    font-size: 14px;
-    color: #725c5c;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+/* identical to box height */
+
+
+color: #725C5C;
 }
 
 
 header .language{ 
-border: 1px solid #CCCCCC;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 6px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 12px;
 
-border-radius: 3px;
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 4px;
-padding: 6px 12px;
-font-size: 12px;
-cursor: pointer;
-line-height: 12px;
-margin-right: 2%;
+
+
 }
 
 header .language .icon-language img{
@@ -97,7 +100,8 @@ header .select-language select {
     font-size: 12px;
     line-height: 14px;
     cursor: pointer;
-    outline: none; border: none;
+    outline: none; 
+    border: none;
 }
 
 
@@ -106,33 +110,39 @@ header .usuario{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    
+   
 }
 header .usuario .title p{
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: right;
+   
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height */
+
+text-align: right;
+
+color: #333333;
 
 }
 header .usuario a{
-  
+    
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 18px;
     text-align: right;
     color: #333333;
-    text-decoration: none;
     padding-left: 5%;
-
+    text-decoration: none;
 }
 header .usuario .img-user{
     display: flex;
     align-items: center;
-    margin-right: -2%;
+    margin-right: -8%;
     
 }
 
@@ -140,7 +150,7 @@ header .usuario .img-user img{
     width: 32px;
     height: 30px;
     border-radius: 50%;
-    margin-left: 15px;
+    margin-left: 11px;
     margin-right: 10px;
 }
 header .usuario .img-user p{
@@ -157,7 +167,7 @@ header .usuario .img-user p{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 
 }
 /* FIM DO HEADER CABECALHO */
@@ -174,7 +184,7 @@ section.content .conteudo-principal{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+   width: 100%;
     padding-right: 2%;
     
     
@@ -188,6 +198,7 @@ section.content .title-principal p{
     line-height: 25px;
     color: #ed7839;
     letter-spacing: 0.01em;
+    
     
    
 }
@@ -217,6 +228,9 @@ section.content .botoes-info button{
 section.content .botoes-info img {
     width: 16px;
     height: 16px;
+}
+section.content .botoes-info button:hover{
+    background-color: #d56c33;
 }
 
 section.content .citar-trabalho{
@@ -257,6 +271,7 @@ section.content  .box-conteudo{
 section.content .box-conteudo .video-content{
   
   width: 100%;
+  
   height:395px;
   border: none;
 }
@@ -285,17 +300,17 @@ section.content .detalhe-descricao{
 }
 
 section.content .detalhe-descricao::-webkit-scrollbar {
-    width: 8px;
+    width: 3px;
 }
 
 section.content .detalhe-descricao::-webkit-scrollbar-track {
-    -webkit-box-shadow:inset 0 0 6px rgba(26, 24, 23, 0.6);
-    border-radius:2px;
+    -webkit-box-shadow:inset 0 0 6px rgba(153, 153, 153, 0.6);
+    border-radius:5px;
 }
 
 section.content .detalhe-descricao::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    -webkit-box-shadow: inset 0 0 6px rgb(255, 85, 7)
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgb(121, 119, 119)
 }
 
   
@@ -304,7 +319,7 @@ section.content .detalhe-descricao  p{
     font-style: normal;
     font-weight: 500;
     font-size: 12.3px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     color: #5C5C5C;
 }
 section.content .detalhe-autor p, 
@@ -312,9 +327,26 @@ section.content .detalhe-autor p,
     margin-top: 22px;
     display: flex;
     flex-direction: column;
+
+    
+}
+section.content .detalhe-autor p{
+    color: #726c6c;
+    font-size: 14px;
+}
+section.content .detalhe-universidades p{
+    color: rgb(177, 176, 176);
 }
 
 
+/* medias screen responsivo */
+    /* @media (max-width: 1055px) {
+        .box-conteudo .box-video .video-content{
+            width: 105% !important;
+           
+        }
+        
+    } */
 
  @media(max-width: 780px){
      
@@ -329,54 +361,165 @@ section.content .detalhe-autor p,
       .menu-mobile{
         display: block;
         position: fixed;
+       
         
     }
    aside{
        display: none;
    }
-   .texto-header{
-       margin-right: 5%;
-       
-   }
-   .texto-header .text-header-2 h2{
-    font-size: 14px;
+  
+    
+  
+   .texto-header .text-header-2 p{
+    font-size: 13px;
     line-height: 20px;
-    margin-right: 48px;
-    width: 100%;
+    font-weight: 700;
    
-   }
-   .texto-header p{
-    font-size: 6px;
-    line-height: 10px;
  
-       
    }
-   header .language{
-    border-radius: 3px;
-    border-radius: 4px;
-    padding: 4px 4px;
-    font-size: 8px;
-    cursor: pointer;
-    line-height: 12px;
-   margin-right: 0.5%;
-
+   .texto-header .text-header-1 p,
+   .texto-header .text-header-3 p{
+    font-size: 11px;
+    line-height: 15px;
+    
+  
    }
+   
    section.content .title-principal p{
        font-size: 15px;
+        margin-bottom: 13px !important;
    }
    
-section.content .botoes-info button{
-    padding: 8px 9px;
+/* section.content .botoes-info button{
+    padding: 10px 15px;
     font-size: 11px;
    
 }
 
 section.content .botoes-info img,
 seciton.content .botoes-info svg{
-    width: 13px;
-    height: 13px;
-}
+    width: 16px;
+    height: 16px;
+} */
 
   
  }
+
+ @media (max-width: 470px) {
+
+    .container{
+        width: 100%;
+        padding: 0.3rem 5.8rem;
+        padding-left: 31px;
+   
+    }
+    header .box-cabecalho{
+        flex-direction: column;
+        gap: 13px 0;
+       text-align: center;
+       margin: 8px 60px;
+       
+    
+
+    }
+    
+ 
+    .texto-header .text-header-2 p{
+        font-size: 13px;
+        line-height: 17px;
+       
+       font-weight: 700;
+      
+       }
+       .texto-header .text-header-1 p, 
+       .texto-header .text-header-3 p{
+       font-size: 12px;
+        line-height: 15px;
+      
+      
+     
+       }
+    
+
+    section.content .conteudo-principal{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 50px;
+        
+        
+    }
+    section.content .title-principal p{
+        font-size: 14px;
+        margin-bottom: 30px;
+
+    }
+
+section.content .box-conteudo{
+  
+    display: flex;
+    flex-direction: column;
+  
+}
+
+section.content .title-detalhe h2{
+
+    font-size: 20px;
+}
+
+section.content .detalhe-descricao{
+    width: 100%;
+}
+
+header .language{
+    padding: 6px 35px;
+ }
+
+}
+
+
+
+@media (max-width: 378px) {
+
+    .container{
+        width: 90.5%;
+        padding: 0.3rem 5.8rem;
+        padding-left: 31px;
+    
+    }
+}
+
+
+@media (max-width: 350px) {
+
+    .container{
+        width: 85%;
+        padding: 0.3rem 5.8rem;
+        padding-left: 31px;
+    
+    }
+}
+
+@media (max-width: 333px){
+
+    .container{
+        width: 85%;
+        padding: 0.3rem 5.8rem;
+        padding-left: 31px;
+    
+    }
+    .box-conteudo .box-video .video-content{
+        width: 280px !important;
+        height: 200px !important;
+    }
+    section.content .title-principal p{
+        font-size: 11px;
+        text-align: left;
+       
+    }
+    section.content .detalhe-descricao p{
+        font-size: 9px;
+    }
+}
 

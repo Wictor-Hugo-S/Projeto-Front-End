@@ -1,14 +1,17 @@
 .content-resumo,.content-discussoes{
     background: #FDF1EB;
-    margin-top: 70px;
+    margin-top: 20px;
     width: 98%;
     max-width: 1200px;
     background-color: #fdf1eb;
     font-size: 1.2rem;
     font-weight: 700;
     color: #4e4e4e;
-    margin-bottom: 2.5rem;
+   
     border: solid 1px #ececec;
+}
+.content-discussoes{
+    margin-bottom: 20px;
 }
 /* SECTION CARD RESUMO */
 
@@ -31,6 +34,7 @@ letter-spacing: 0.02em;
 color: #5C5C5C;
 padding:10px 10px;
 background:#FFF;
+
 }
 
 .close-texto{
@@ -81,9 +85,12 @@ i{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 19px;
+    text-align: center;
+    
+    color: #595959;
     letter-spacing: 0.02em;
-    color: #5C5C5C;
+  
     padding:10px 10px;
     background:#FFF;
 }
@@ -250,6 +257,7 @@ justify-content: space-between;
     font-weight: 700;
     font-size: 20px;
     color: #ed7839;
+    text-align: center;
     
 }
 .descricao-topico-enviado p{
@@ -259,6 +267,7 @@ justify-content: space-between;
     font-weight: 400;
     font-size: 15px;
    padding: 20px 0;
+   text-align: center;
   
 
 }
@@ -297,7 +306,7 @@ justify-content: space-between;
 
 /* RESPONSIVIDADE */
 
-@media(max-width: 550px){
+@media(max-width: 550px){   
     .autores-sugestoes p{
         font-size: 16px;
     }
@@ -307,6 +316,37 @@ justify-content: space-between;
         text-align: center;
 
     }
+
+
+}
+@media (max-width: 470px){
+
+.content-resumo .title-resumo p{
+    font-size: 13px;
+    line-height: 20px;
+
+}
+
+.content-discussoes .title-topico-enviado h1{
+    font-size: 15px; 
+}
+
+.content-discussoes .descricao-topico-enviado p{
+
+    font-size: 13px;
+    line-height: 20px;
+
+}
+
+form input{
+  
+    font-size: 10px;
+}
+form textarea{
+
+    font-size: 12px;
+
+}
 }
 
 

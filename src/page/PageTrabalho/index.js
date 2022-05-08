@@ -239,7 +239,7 @@ function handleExcluir (id){
                             <p>Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
                         </div>
                         <div className='text-header-2'>
-                         <h2>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h2>
+                         <p>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
                         </div>
                         <div className='text-header-3'>
                             <p>ISSN: 1234-5678</p>
@@ -316,7 +316,7 @@ function handleExcluir (id){
                                         <p>Palavras-chaves: <strong> funcionais, alimentação escolar.</strong> </p>
                                     </div>
                                 <div className='detalhe-autor'>
-                                    <p>  <strong>Autores:</strong>
+                                    <p>  <strong style={{fontWeight:'900'}}>Autores:</strong>
                                     Galileo Galilei¹
                                     <br/>
                                     Berta Lange de Morretes²
@@ -477,11 +477,12 @@ function handleExcluir (id){
               
                     <div className='separar-content'></div>
 
-                <footer>
+               
+        </div>
+        <footer>
                     <Footer/>
                             
                 </footer>
-        </div>
             
               
             </section>
